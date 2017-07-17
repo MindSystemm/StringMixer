@@ -13,7 +13,7 @@ namespace MindSystem_Mixer
         {
             string final = "";
 
-            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèêâ]*$");
+            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèêâ ]*$");
             bool sts = objAlphaPattern.IsMatch(tocheck);
             if (!sts)
             {
@@ -22,6 +22,10 @@ namespace MindSystem_Mixer
 
             for (int i = 0; i < tocheck.Length; i++)
             {
+                if (tocheck[i] == ' ')
+                {
+                    final += " ";
+                }
                 if (tocheck[i] == 'é')
                 {
                     final += "è";
@@ -293,7 +297,7 @@ namespace MindSystem_Mixer
         public static string Decrypt(string tocheck)
         {
             string final = "";
-            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèâê]*$");
+            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèâê ]*$");
             bool sts = objAlphaPattern.IsMatch(tocheck);
             if (!sts)
             {
@@ -302,6 +306,10 @@ namespace MindSystem_Mixer
 
             for (int i = 0; i < tocheck.Length; i++)
             {
+                if (tocheck[i] == ' ')
+                {
+                    final += " ";
+                }
                 if (tocheck[i] == 'è')
                 {
                     final += "é";

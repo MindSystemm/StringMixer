@@ -23,7 +23,7 @@ namespace MindSystem_Mixer
             string final = "";
             string tocheck = textBox1.Text;
 
-            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèêâ]*$");
+            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèêâ ]*$");
             bool sts = objAlphaPattern.IsMatch(tocheck);
             if(!sts)
             {
@@ -298,6 +298,10 @@ namespace MindSystem_Mixer
                 {
                     final += "0";
                 }
+                if (tocheck[i] == ' ')
+                {
+                    final += " ";
+                }
             }
             textBox2.Text = final;
         }
@@ -306,7 +310,7 @@ namespace MindSystem_Mixer
         {
             string final = "";
             string tocheck = textBox1.Text;
-            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèâê]*$");
+            Regex objAlphaPattern = new Regex(@"^[a-zA-Z0-9éèâê ]*$");
             bool sts = objAlphaPattern.IsMatch(tocheck);
             if (!sts)
             {
@@ -583,6 +587,10 @@ namespace MindSystem_Mixer
                 if (tocheck[i] == '0')
                 {
                     final += "9";
+                }
+                if (tocheck[i] == ' ')
+                {
+                    final += " ";
                 }
             }
             textBox2.Text = final;
