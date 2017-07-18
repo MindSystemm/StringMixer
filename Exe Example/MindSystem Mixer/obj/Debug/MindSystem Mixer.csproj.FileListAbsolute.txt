@@ -6,5 +6,4 @@ c:\users\nicol\onedrive\documents\visual studio 2015\Projects\MindSystem Mixer\M
 c:\users\nicol\onedrive\documents\visual studio 2015\Projects\MindSystem Mixer\MindSystem Mixer\obj\Debug\MindSystem Mixer.csproj.GenerateResource.Cache
 c:\users\nicol\onedrive\documents\visual studio 2015\Projects\MindSystem Mixer\MindSystem Mixer\obj\Debug\MindSystem Mixer.exe
 c:\users\nicol\onedrive\documents\visual studio 2015\Projects\MindSystem Mixer\MindSystem Mixer\obj\Debug\MindSystem Mixer.pdb
-C:\Users\nicol\OneDrive\Documents\Visual Studio 2015\Projects\MindSystem Mixer\MindSystem Mixer\bin\Debug\MindSystem Mixer.exe.CodeAnalysisLog.xml
-C:\Users\nicol\OneDrive\Documents\Visual Studio 2015\Projects\MindSystem Mixer\MindSystem Mixer\bin\Debug\MindSystem Mixer.exe.lastcodeanalysissucceeded
+C:\Users\nicol\OneDrive\Documents\Visual Studio 2015\Projects\MindSystem Mixer\MindSystem Mixer\obj\Debug\MindSystem Mixer.csprojResolveAssemblyReference.cache

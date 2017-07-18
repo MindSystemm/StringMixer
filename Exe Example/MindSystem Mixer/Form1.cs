@@ -27,5 +27,25 @@ namespace MindSystem_Mixer
         {
             textBox2.Text = StringMixer.Decrypt(textBox1.Text);
         }
+        public static string Generator(string str)
+        {
+            char[] array = str.ToCharArray();
+            Random rng = new Random();
+            int n = array.Length;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                var value = array[k];
+                array[k] = array[n];
+                array[n] = value;
+            }
+            return new string(array);
+        }
+        private static string PublicKey = " èéâêZHKAJULIBTYXRSEWVGOQCNMPDFzhkajulibtyxrsewvgoqcnmpdf9876543210#@&|}{)(*$";
+        private void button3_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = richTextBox1.Text.Replace("[Generated]", Generator(PublicKey));
+        }
     }
 }
