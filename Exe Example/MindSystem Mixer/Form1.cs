@@ -20,12 +20,26 @@ namespace MindSystem_Mixer
 
         private void button1_Click(object sender, EventArgs e)
         {
-           textBox2.Text = StringMixer.Encrypt(textBox1.Text);
+            if(textBox3.Text == "")
+            {
+                textBox2.Text = StringMixer.Encrypt(textBox1.Text);
+            }
+         else
+            {
+                textBox2.Text = StringMixer.EncryptWithKey(textBox1.Text, textBox3.Text);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox2.Text = StringMixer.Decrypt(textBox1.Text);
+            if (textBox3.Text == "")
+            {
+                textBox2.Text = StringMixer.Decrypt(textBox1.Text);
+            }
+            else
+            {
+                textBox2.Text = StringMixer.DecryptWithKey(textBox1.Text, textBox3.Text);
+            }
         }
         public static string Generator(string str)
         {
