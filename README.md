@@ -19,7 +19,7 @@ Specials characters such as @,#/: are not supported !
 
 ToDO List : 
 
-- Add Special Character to encryptor/decryptor
+- Add Special Character to encryptor/decryptor (Partially Done)
 - Make a class generator to change order (why not use dnlib, list and random?) 
 - Add a key system
 
